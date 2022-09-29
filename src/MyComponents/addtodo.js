@@ -29,7 +29,7 @@ export function AddTodo({ addTodo }) {
       return;
     }
     else {
-      addTodo(title, desc);
+      addTodo(title.trim(), desc);
       setTitle("");
       setDesc("");
       return;
